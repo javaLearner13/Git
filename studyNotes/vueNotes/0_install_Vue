@@ -1,0 +1,24 @@
+How to install vue3
+
+1. download nodejs - nodejs.org
+2. create a folder (a parent folder)
+3. open vscode and the folder you just created
+4. open terminal (default terminal not bash)
+5. type npm install -g @vue/cli (to check node version: node -v)
+6. type vue create PROJECT_NAME
+7. press enter and pick vue3 not vue2
+*****
+Now, you should browse to the sub-folder you just created in procedure no.5
+(the actual project folder)
+8. type npm run serve
+9. ctrl+click http://localhost:8080/ to view your work locally
+
+***install extensions: vetur, vue 3 snippets
+***under src, App.vue is the main page, sub pages go under components. You should link sub pages to main vue page.
+*** < + tab key auto-completes template (vetur)
+
+***************************************
+When creating another project, use console and type vue create PROJECT_NAME
+Typing npm install -g @vue/cli under the parent folder is done only once in the beginning.
+But of course, if you create another parent folder to hold project folders, you should start from npm install -g @vue/cli
+***************************************

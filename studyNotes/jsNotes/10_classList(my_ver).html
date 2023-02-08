@@ -1,0 +1,48 @@
+
+<!-- classList.add() :::: adds class -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    #box{width: 200px; height: 200px; border: 1px solid red; display: flex; justify-content: center; align-items: center; cursor: pointer;}
+    .opening{background-color: orange;}
+    .fa-reddit{color: red; font-size: 48px;}
+</style>
+</head>
+<body>
+    <div id="box">box</div>
+    <p>
+        <button type="button" onclick="fnc1()">add</button>
+        <button type="button" onclick="fnc2()">remove</button>
+        <button type="button" onclick="fnc3()">toggle</button>
+    </p>
+    <p><i class="fa">&#xf1a1;</i></p>
+    <p><i id="icon" class="fa fa-reddit" onclick="fnc4()"></i></p>
+    <script>
+        let fnc1 = () =>{
+            document.getElementById("box").classList.add("opening");
+            return fnc1;
+        }
+        let fnc2 = () =>{
+            document.getElementById("box").classList.remove("opening");
+            return fnc2;
+        }
+        let fnc3 = () =>{
+            document.getElementById("box").classList.toggle("opening");
+            return fnc3;
+        }
+        let fnc4 = () =>{
+            document.getElementById("icon").classList.toggle("fa-reddit-alien");
+            return fnc4;
+        }
+    </script>
+</body>
+</html>

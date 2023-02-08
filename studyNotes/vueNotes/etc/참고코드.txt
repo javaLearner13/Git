@@ -1,0 +1,5 @@
+﻿참고 url : 
+https://github.com/dohoons/jquery.touchSlider
+------------------------------------------
+
+// eslint-disable-line no-unused-vars

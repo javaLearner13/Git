@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>templateLiteral</title>
+<script>
+//ES(ECMASCRIPT)  : 자바스크립트의 표준  
+//ES5
+//ES6
+
+//  `문자열  ${변수}`
+//ES5
+var str1 = "Hello!!";
+var str2 = "안녕하세요!!";
+console.log(str1+" . "+str2); //Hello!! . 안녕하세요!!
+
+//ES6
+var str3 = "Hello!!";
+var str4 = "안녕하세요!!";
+console.log(`${str3} . ${str4}`); //Hello!!. 안녕하세요!!
+
+//ES5
+console.log("결과 : 3 * 3 = "+ 3 * 3); //결과 : 3 * 3 = 9
+
+//ES6
+console.log(`결과 : 3 * 3 = ${3 * 3}`); //결과 : 3 * 3 = 9
+
+//ES5
+var value1 = 1;
+var value2 = 2;
+var result1 = "구입한 총 수량은 " +  (value1+value2) + "개 입니다.";
+console.log(result1); //구입한 총 수량은 3개 입니다.
+
+//ES6
+var value3 = 1;
+var value4 = 2;
+var result2 = `구입한 총 수량은 ${value3+value4}개 입니다.`;
+console.log(result2); //구입한 총 수량은 3개 입니다.
+
+//ES5
+var value5 = 1;
+var value6 = 2;
+var result3 = "구입한 총 수량은 \n" +  (value5+value6) + "개 입니다.";
+console.log(result3); 
+
+//ES6
+var value7 = 1;
+var value8 = 2;
+var result4 = `구입한 총 수량은
+${value7+value8}개 입니다.`;
+console.log(result4);  
+
+//ES5
+var value9 = 1;
+var value10 = 2;
+var result5 = "<h3>구입한 총 수량은</h3><br>" +"<li>"+(value9+value10) + "개</li> 입니다.";
+document.write(result5);
+
+//ES6
+var value11 = 1;
+var value12 = 2;
+var result6 = `<h3>구입한 총 수량은</h3>
+<li>${value11+value12}개</li> 입니다.`;
+document.write(result6);
+
+//삼항조건연산자  ( 조건식 ? 실행문1 : 실행문2)
+//ES5
+var bool1 = false;
+var result_bool1 = "논리형 값은 "+ (bool1 ? "참" : "거짓") + "입니다.";
+console.log(result_bool1); //논리형 값은 거짓입니다.
+
+//ES6
+var bool2 = false;
+var result_bool2 = `논리형 값은 ${bool1 ? "참" : "거짓"}입니다.`;
+console.log(result_bool2); //논리형 값은 거짓입니다.
+</script>
+</head>
+<body>
+  
+</body>
+</html>

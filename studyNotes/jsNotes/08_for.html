@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>for</title>
+<script>
+ const ex1 = ["A1","B1","C1","D1","E1"]; 
+ let txt1 = "";
+ txt1 += ex1[0] + "<br>";
+ txt1 += ex1[1] + "<br>";
+ txt1 += ex1[2] + "<br>";
+ txt1 += ex1[3] + "<br>";
+ txt1 += ex1[4] + "<br>";
+ document.write(txt1);
+ document.write("<hr>");
+
+ //
+ const ex2 = ["A2","B2","C2","D2","E2"]; 
+ let txt2 = "";
+ for (let i = 0; i < ex2.length; i++){
+    txt2 += ex2[i] + "<br>";
+ }
+ document.write(txt2);
+ document.write("<hr>");
+
+ //
+ const ex3 = ["A2","B2","C2","D2","E2"]; 
+ let i3 = 0;
+ let len3 = ex3.length;
+ let txt3 = "";
+ for( ; i3 < len3 ; ){
+  txt3 += ex3[i3] +  "<br>";
+  i3++;
+ }
+ document.write(txt3);
+ document.write("<hr>");
+
+ //
+ /* 배열의 인덱스
+ for( 반복변수 in 배열또는 객체)
+ */
+ /* 배열의 값
+ for( 반복변수 of 배열또는 객체)
+ */
+const arr = [10,20,30,40,50];
+for(let i in arr){
+  console.log(i); // 0 1 2 3 4
+}
+for(let i of arr){
+  console.log(i); // 10 20 30 40 50
+}
+
+const ex4 = ["A4","B4","C4","D4","E4"];
+let txt4 = "";
+for (let i4 in ex4){
+  txt4 += ex4[i4] + "<br>";
+}
+document.write(txt4);
+document.write("<hr>");
+
+const ex5 = { name1 : "A" , name2 : "B", age : 30};
+let txt5 = "";
+for (let i5 in ex5){
+  txt5 += ex5[i5] + "<br>";
+}
+document.write(txt5);
+document.write("<hr>");
+
+const ex6 = ["A6","B6","C6","D6","E6"];
+let txt6 = "";
+for (let i6 of ex6){
+  txt6 += i6 + "<br>";
+}
+document.write(txt6);
+document.write("<hr>");
+
+const ex7  = "Hello";
+let txt7 = "";
+for (let i7 of ex7){
+  txt7 += i7 + "<br>";
+}
+document.write(txt7);
+document.write("<hr>");
+
+const ex8  = "Hello";
+let txt8 = "";
+for (let i8 in ex8){
+  txt8 += i8 + "<br>";
+}
+document.write(txt8);
+document.write("<hr>");
+
+//
+function fnc1(x){
+  for(let i = 0; i < 5; i++){//0~4
+    x(i);
+  }
+}
+function out1(i){
+  console.log(`${i}번째`);
+}
+fnc1(out1);
+
+//
+function Fnc3(j){
+  for(let k = 10; k < 14; k++){
+    j(k);
+  } 
+}
+Fnc3(function(k){
+  console.log(`${k}번째`);
+});
+
+//forEach() 배열요소 실행
+//forEach.function (value,index,array){}
+const num1 = [10,20,30,40,50];
+num1.forEach(function(value,index,array){
+  console.log(`${index}번째 / ${value}값 / ${array}데이터`);
+});
+
+//map() 배열요소 실행
+//map.function (value,index,array){}
+const num2 = [10,20,30,40,50];
+num2.map(function(value,index,array){
+  console.log(`${index}번째 / ${value}값 / ${array}데이터`);
+});
+
+const num3 = [1,2,3,4,5];
+for(let i = 0; i < num3.length; i++){
+  console.log(num3[i]); //1 2 3 4 5
+}
+num3.forEach(function(index){//1 2 3 4 5
+  console.log(index);
+});
+num3.map(function(index){//1 2 3 4 5
+  console.log(index);
+});
+ 
+let num5 = [10,20,30,40,50];
+num5 = num5.forEach(function(value){
+ // return value * value; //오류
+ console.log(value * value);
+});
+//num5.forEach(console.log); //오류
+
+let num6 = [10,20,30,40,50];
+num6 = num6.map(function(value){
+ return value * value;
+});
+num6.map(console.log);
+
+//filter  리턴하는 값이 true인것만 반환
+//filter.function (value,index,array){}
+let num7 = [0,2,3,3,4,5];
+let num7_ = num7.filter(function(value){
+  return value % 2 === 0
+});
+console.log(`${num7}`);
+console.log(`${num7_}`); //0 2 4
+</script>
+</head>
+<body>
+  
+</body>
+</html>

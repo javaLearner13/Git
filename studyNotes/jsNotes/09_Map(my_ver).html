@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.3.min.js"></script>t
+</head>
+
+<body>
+    <script>
+        const project1 = new Map([
+            ["AAAA", 500], //key, value
+            ["BBBB", 300],
+            ["CCCC", 200]
+        ]);
+        //.get() :retrieve key values
+        console.log(project1.get("AAAA"));
+
+        //.set : add elements
+        const project2 = new Map();
+        project2.set("AAAA", 500);
+        project2.set("BBBB", 300);
+        project2.set("CCCC", 200);
+
+        console.log(project2);
+        console.log(project2.get("BBBB"));
+
+        const project3 = new Map([
+            ["AAAA", 500],
+            ["BBBB", 300],
+            ["CCCC", 200]
+        ]);
+        project3.set("BBBB", 500); // 300 -> 500
+        console.log(project3.get("BBBB")); // 500
+
+        //.size : return number of elements
+        const project4 = new Map([
+            ["AAAA", 500],
+            ["BBBB", 300],
+            ["CCCC", 200]
+        ]);
+        console.log(project4.size); //3
+
+        //.delete
+        const project5 = new Map([
+            ["AAAA", 500],
+            ["BBBB", 300],
+            ["CCCC", 200]
+        ]);
+        project5.delete("AAAA"); // AAAA removed
+        console.log(project5);
+        console.log(project5.size); //2
+
+        //.clear
+        const project6 = new Map([
+            ["AAAA", 500],
+            ["BBBB", 300],
+            ["CCCC", 200]
+        ]);
+        project6.clear();
+        console.log(project6.size); //0
+
+        //.has : boolean
+        const project7 = new Map([
+            ["AAAA", 500],
+            ["BBBB", 300],
+            ["CCCC", 200]
+        ]);
+        console.log(project7.has("BBBB")); //true
+        console.log(project7.has("BBB")); //false
+
+        const project8 = new Map([
+            ["AAAA", 500],
+            ["BBBB", 300],
+            ["CCCC", 200]
+        ]);
+        console.log(typeof project8) //object
+
+        const project9 = new Map([
+            ["AAAA", {
+                value: 'valueA'
+            }],
+            ["BBBB", {
+                value: 'valueB'
+            }],
+            ["CCCC", {
+                value: 'valueC'
+            }]
+        ]);
+        console.log(project9);
+
+        const project10 = new Map([
+            [{
+                key: 'AAAA'
+            }, {
+                value: 'valueA'
+            }],
+            [{
+                key: 'BBBB'
+            }, {
+                value: 'valueB'
+            }],
+            [{
+                key: 'CCCC'
+            }, {
+                value: 'valueC'
+            }]
+        ]);
+        console.log(project10);
+    </script>
+</body>
+
+</html>

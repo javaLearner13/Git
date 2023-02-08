@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>prototype</title>
+<script>
+let test = {
+  name : "자바스크립트",
+  age : function(){
+    console.log(`${this.name}입니다.`);
+  }
+}  
+test.age(); //자바스크립트입니다
+
+let test2 = {
+  name : "자바스크립트",
+  age : function(){
+    console.log(`${this.name}1입니다.`);
+    this.project();
+  },
+  project : function(){
+    console.log(`${this.name}2입니다.`);
+  } 
+}
+test2.age();//자바스크립트1입니다.  //자바스크립트2입니다.
+
+const pony = {
+  name : "아반떼",
+  color : "white",
+  start : function(){
+    console.log(`${this.name}가 시동을 겁니다.`);//아반떼가 시동을 겁니다.
+    this.drive();
+  },
+  drive : function(){
+    console.log(`${this.name}가 주행을 합니다.`);//아반떼가 주행을 합니다.
+    this.stop();    
+  },
+  stop : function(){
+    console.log(`${this.name}가 주행을 멈춥니다.`); //아반떼가 주행을 멈춥니다.
+    this.parking();
+  },
+  parking : function(){
+    console.log(`${this.name}가 주차를 합니다.`); //아반떼가 주차를 합니다.
+  }
+}
+pony.start();
+
+//IIFE(Immediately-invoked function expression: 즉시 작동하는 함수식)
+/*
+  (function(){
+      .....
+  })();
+*/
+//
+function test1(){
+  document.write("hello1");
+}
+test1();
+
+(function(){
+  document.write("hello2");
+})();
+
+const Car = (function(){
+  console.log("프로토타입의 시작");
+
+  function  Car(name1, color1, type1){
+    this.name = name1;
+    this.color = color1;
+    this.type = type1;
+  }
+  Car.prototype.start = function(){
+    console.log(`${this.color} ${this.name} 이(가) 시동을 겁니다.`);
+    this.drive();
+  }
+  Car.prototype.drive = function(){
+    console.log(`${this.color} ${this.name} 이(가) 주행을 합니다`);
+    this.stop();
+  }  
+  Car.prototype.stop = function(){
+    console.log(`${this.color} ${this.name} 이(가) 주행을 멈춥니다.`);
+    this.parking();
+  }
+  Car.prototype.parking = function(){
+    console.log(`${this.color} ${this.name} 이(가) 주차를 합니다.`);
+  }       
+  return Car;
+})();
+const avante = new Car("아반떼","레드","준중형");
+avante.start();
+const tusan = new Car("뉴투싼","메탈블루","SUV");
+tusan.start();
+
+//"000 학생이 00반에 입장했습니다."
+//배열데이터
+const student_ = [
+  ["강나라", "7반"],
+  ["김동형", "3반"],
+  ["김상우", "2반"],
+  ["한겨례", "5반"],
+  ["나영지", "1반"],
+  ["한우리", "4반"],
+  ["이상균", "5반"],
+]
+const Student = (function(){
+  function Student1(st_name, st_class){//생성자 파트
+    this.name = st_name;
+    this.class = st_class;
+  }
+  Student1.prototype.infomation = function(){//프로토타입 파트
+    console.log(`${this.name} 학생이 ${this.class}반에 입장했습니다.`);
+  }
+  return Student1;
+})();
+for(k of student_){
+  //console.log(k);
+  const student = new Student(k[0],k[1]);
+  student.infomation();
+}
+
+//데이터
+const gamer = [
+  {name : "불타는 용병", category : "오크" , level : 54},
+  {name : "얼음 마법사", category : "휴먼", level : 32 },
+  {name : "할리퀸", category : "하이엘프", level : 43 },
+  {name : "냉혈전사", category : "휴먼", level : 37 },
+  {name : "로드위의 무법자", category : "다크엘프", level : 49 },
+  {name : "언제나 초보", category : "드로프", level : 61 },
+]
+// "불타는 용병 ( 오크 - 54 ) 님이 입장 하셨습니다."
+const gamer_t = (function(){
+  function game(s_name, s_category, s_level){
+    this.name = s_name;
+    this.category = s_category;
+    this.level = s_level;
+  }
+  game.prototype.enterance = function(){
+    console.log(`${this.name} ( ${this.category} - ${this.level} ) 님이 입장 하셨습니다.`);
+  }
+  return game;
+})();
+for(i of gamer){
+  //const gamer_ = new gamer_t(i.name, i.category, i.level); 
+  const gamer_ = new gamer_t(i['name'], i['category'], i['level']); 
+  gamer_.enterance();
+}
+</script>
+</head>
+<body>
+  
+</body>
+</html>

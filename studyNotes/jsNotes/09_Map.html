@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Map객체</title>
+<script>
+ //new Map() 배열
+ const project1 = new Map([
+    [ "AAAA" , 500],  //key, value
+    [ "BBBB" , 300],
+    [ "CCCC" , 200],
+]);
+//.get()  :키값 가져옴
+console.log(project1.get("AAAA"));
+
+//.set : 추가
+const project2 = new Map();
+project2.set("AAAA",500);
+project2.set("BBBB",300);
+project2.set("CCCC",200);
+console.log(project2);
+console.log(project2.get("BBBB"));//500
+
+//기존 Map값을 변경
+const project3 = new Map([
+    [ "AAAA" , 500],  //key, value
+    [ "BBBB" , 300],
+    [ "CCCC" , 200], 
+]);
+project3.set("BBBB", 500);
+console.log(project3.get("BBBB")); //500
+
+//.size 요소 수를 반환
+const project4 = new Map([
+  [ "AAAA" , 500],  //key, value
+  [ "BBBB" , 300],
+  [ "CCCC" , 200],   
+]);
+console.log(project4.size); //3
+
+//delete 요소제거
+const project5 = new Map([
+  [ "AAAA" , 500],  //key, value
+  [ "BBBB" , 300],
+  [ "CCCC" , 200],   
+]);
+project5.delete("AAAA");
+console.log(project5.size);
+
+//clear 모든 요소 제거
+const project6 = new Map([
+  [ "AAAA" , 500],  //key, value
+  [ "BBBB" , 300],
+  [ "CCCC" , 200],   
+]);
+project6.clear();
+console.log(project6.size);
+
+//has 키가 맵에 있으면 true반환
+const project7 = new Map([
+  [ "AAAA" , 500],  //key, value
+  [ "BBBB" , 300],
+  [ "CCCC" , 200],   
+]);
+console.log(project7.has("BBBB"));//true
+console.log(project7.has("BBB"));//false
+
+const project8 = new Map([
+  [ "AAAA" , 500],  //key, value
+  [ "BBBB" , 300],
+  [ "CCCC" , 200],   
+]);
+console.log(typeof project8) //object
+
+const project9 = new Map([
+  [ "AAAA" , { value : 'valueA' }],  //key, value
+  [ "BBBB" , { value : 'valueB' }],
+  [ "CCCC" , { value : 'valueB' }] 
+]);
+console.log(project9)
+
+const project10 = new Map([
+  [ { key : 'AAAA'}, { value : 'valueA' }],  //key, value
+  [ { key : 'BBBB'} , { value : 'valueB' }],
+  [ { key : 'CCCC'} , { value : 'valueB' }] 
+]);
+console.log(project10)
+</script>
+</head>
+<body>
+  
+</body>
+</html>

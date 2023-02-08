@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>class</title>
+<script>
+  //Class는 객체를 생성하기 위한 템플릿(ES6) 
+  //코드 재사용
+
+  /*prototype
+  //객체 자료형이름.prototype.메소드이름 = function(){
+    ....
+	}
+  변수 = new 자료형이름(....)
+  */
+  function Test(name1, name2){
+    this.name1 = name1;
+    this.name2 = name2;
+    return `${this.name1} / ${this.name2}`;
+  }
+  let test = new Test('111', '222');
+  console.log(test);   //Test {name1: '111', name2: '222'}
+  console.log(test.name1); //111
+  console.log(test.name2);//222
+  let test_ = new Test('333', '444');
+  console.log(test_);   //Test {name1: '333', name2: '444'}
+  console.log(test_.name1); //333
+  console.log(test_.name2);//444
+
+
+  function Name0(name1, name2){
+    this.name1 = name1;
+    this.name2 = name2;
+  }
+  Name0.prototype.nameTit = function(){
+    return `${this.name1} / ${this.name2}`;
+  } 
+  const total0 = new Name0('AAA', 20);
+  console.log(total0.nameTit()); //AAA / 20
+  const total0_ = new Name0('BBB', 30);
+  console.log(total0_.nameTit()); //BBB / 30
+
+  //
+  function Name1({name1, name2}){
+    this.name1 = name1;
+    this.name2 = name2;
+  }  
+  Name1.prototype.nameTit2 = function(){
+    return `${this.name1} / ${this.name2}`;
+  } 
+  const total = new Name1({name1 : 'AAA', name2 : 'BBB' });
+  console.log(total.nameTit2());//AAA / BBB
+  const total1 = new Name1({name1 : 'CCC', name2 : 'DDDE' });
+  console.log(total1.nameTit2());//CCC / DDDE
+
+  //class
+  /*
+  class ClassName {
+	    constructor() { ... }
+	}
+	*/ 
+  class Name2{
+    constructor({name1, name2}){
+      this.name1 = name1;
+      this.name2 = name2;    
+    }
+     nameTit3(){
+     //nameTit3 = function(){
+      return `${this.name1} / ${this.name2}`;
+    }
+  }
+  const tota2 = new Name2({name1 : 'AAA', name2 : 'BBB' }); 
+  console.log(tota2.nameTit3()); //AAA / BBB
+  const tota22 = new Name2({name1 : 'CCC', name2 : 'DDD' }); 
+  console.log(tota22.nameTit3()); //CCC / DDD
+
+  //
+  class Item{
+    constructor(name){
+      this.brand = name;
+    }
+  }
+  const myitem = new Item("웹표준");
+  console.log(myitem.brand);  //웹표준
+  const myitem_ = new Item("웹개발");
+  console.log(myitem_.brand); //웹개발
+
+  //
+  class Item1{
+    constructor(name,year){
+      this.name = name;
+      this.year = year;         
+    }
+  }
+  const myitem1 = new Item1("웹표준", 2023 ); 
+  console.log(`${myitem1.name} / ${myitem1.year}`);//웹표준 / 2023
+  const myitem2 = new Item1("웹개발", 2023 ); 
+  console.log(`${myitem2.name} / ${myitem2.year}`);  //웹개발 / 2023
+
+  //
+  class Item2{
+    constructor(name){
+      this.brand = name;
+  }
+    present(){
+      return `나의 목표는 : ${this.brand}`;
+    }
+}
+const myitem13 = new Item2("웹개발"); 
+console.log(myitem13.present());
+
+</script>
+</head>
+<body>
+  
+</body>
+</html>

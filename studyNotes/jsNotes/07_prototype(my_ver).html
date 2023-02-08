@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.3.min.js"></script>
+</head>
+
+<body>
+    <script>
+        /* https://www.w3schools.com/js/js_object_prototypes.asp */
+
+        //object constructor
+        function Person(first, last, age, eyecolor) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eyecolor;
+        }
+        //by using prototype, you can add new methods to objects constructor
+            //new method
+        Person.prototype.name = function () {
+            return this.firstName + " " + this.lastName;
+        };
+
+        var Jack = new Person("Jack", "Kim", 18, "brown");
+        console.log(Jack.name());
+        console.log(`${Jack.firstName}`);
+        document.write(`${Jack.lastName}`); //Kim
+
+        /////////////////////////////////////////////////////////////////
+
+        //data
+        const gamer = [
+            {name: "불타는 용병", category : "오크", level:54},
+            {name: "얼음 마법사", category : "휴먼", level:32},
+            {name: "할리퀸", category : "하이엘프", level:43},
+            {name: "냉혈전사", category : "휴먼", level:37},
+            {name: "로드위의 무법자", category : "다크엘프", level:49},
+            {name: "언제나 초보", category : "드워프", level:61}
+        ]
+
+        const gamer_t = (function(){
+            function game(s_name, s_category, s_level){
+                this.name = s_name;
+                this.category = s_category;
+                this.level = s_level;
+                // this.test = "hi";
+            }
+        
+
+        game.prototype.enterance = function(){
+            console.log(`${this.name} ( ${this.category} - ${this.level} ) 님이 입장 하셨습니다.`);
+        }
+        return game;
+        })();
+
+        for(i of gamer){
+            const gamer_ = new gamer_t(i['name'],i['category'],i['level']);
+            gamer_.enterance();
+        }
+        // example: 불타는 용병 ( 오크 - 54 ) 님이 입장 하셨습니다.
+        /* for(i in gamer){
+            console.log(gamer[i].name + " ( " + gamer[i].category + " - " + gamer[i].level + " ) 님이 입장 하셨습니다.");
+        }
+ */
+
+        
+
+
+    </script>
+</body>
+
+</html>

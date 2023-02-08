@@ -1,0 +1,2 @@
+git branch NAME : NAME branch 추가 생성 (default: main)
+git switch NAME : NAME branch 로 작업환경 변경

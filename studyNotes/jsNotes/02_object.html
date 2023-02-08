@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>object</title>
+<script>
+//객체:  키(key)/ 값(value)으로 구성된 프로퍼티(Property)
+/*
+변수명 = {
+    이름(key)  : 값(value),
+    이름(key)  : 값(value),
+}
+*/
+//ES5
+var product1 = {
+  name : "자바스크립트",
+  price : "10,000원"
+}
+var message1 = "상품 "+ product1.name + "의 가격은 " + product1.price+ "입니다.1";
+console.log(message1); //상품 자바스크립트의 가격은 10,000원입니다.1
+
+//ES6
+var product2 = {
+  name : "자바스크립트",
+  price : "10,000원"
+}
+var message2 = `상품 ${product2.name}의 가격은 ${product2.price}입니다.2`;
+console.log(message2); //상품 자바스크립트의 가격은 10,000원입니다.2
+
+//return 함수정의문에 return문이 사용되면 함수를 호출했을 때 결과값(data)를 반환하고 종료
+//ex1
+function ex1(i,j){
+  console.log(i);  //i
+  console.log(j);  //j
+  return;
+  console.log(j); //실행안함
+}
+ex1(5,4);
+
+//ex2
+function ex2(i,j){
+  return i * j;
+}
+console.log(ex2(5,4)); //20
+
+//ex3
+function ex3(i,j){
+  return i * j;
+}
+var ex3_r = ex3(5,4);
+console.log(ex3_r); //20
+
+//
+var product3 = {
+  name : "자바스크립트",
+  price : "10,000원",
+  message3 : function(){
+    return `상품 ${product3.name}의 가격은 ${product3.price}입니다.3`;
+  }
+}
+console.log(product3.message3()); //상품 자바스크립트의 가격은 10,000원입니다.3
+
+//ES5
+var cart1 = {
+  present : "장미 한 묶음",
+  price : 15000
+}
+var totalPrice1 = function(){
+  return cart1.price + "원";
+}
+var myCart1 = "장바구니에 " +cart1.present + "이 담겨있습니다. 구입가격은 " + totalPrice1() + "입니다1";
+console.log(myCart1); //장바구니에 장미 한 묶음이 담겨있습니다. 구입가격은 15000원입니다1
+
+//ES6
+var cart2 = {
+  present : "장미 한 묶음",
+  price : 15000
+}
+var totalPrice2 = function(){
+  return `${cart2.price}원`;
+}
+var myCart2 = `장바구니에 ${cart2.present}이 담겨있습니다. 구입가격은 ${totalPrice2()}입니다1`;
+console.log(myCart2);//장바구니에 장미 한 묶음이 담겨있습니다. 구입가격은 15000원입니다1
+
+//
+var cart3 = {
+  present : "장미 한 묶음",
+  price : 15000
+}
+function totalPrice3(){
+  return `${cart3.price}원`;
+}
+var myCart3 = `장바구니에 ${cart3.present}이 담겨있습니다. 구입가격은 ${totalPrice3()}입니다1`;
+console.log(myCart3); //장바구니에 장미 한 묶음이 담겨있습니다. 구입가격은 15000원입니다1
+
+//생성자 객체
+//new 사용자 정의 생성 
+var myCart4 = function(present,preice){
+  this.present = present;
+  this.preice = preice;
+  this.totalPrice4 = function(){
+    return `장바구니에 ${this.present}이 담겨있습니다. 구입가격은 ${this.preice}입니다2`;
+  }
+}
+var myCart4_ = new myCart4('장미 한 묶음', 15000);
+console.log(myCart4_.totalPrice4());//장바구니에 장미 한 묶음이 담겨있습니다. 구입가격은 15000입니다2
+var myCart4_1 = new myCart4('오이 한 묶음', 20000);
+console.log(myCart4_1.totalPrice4()); //장바구니에 오이 한 묶음이 담겨있습니다. 구입가격은 20000입니다2
+
+//
+var cart5 = {};
+cart5.present = "장미 한 묶음";
+cart5.preice = "23000";
+console.log(`장바구니에 ${cart5.present}이 담겨있습니다. 구입가격은 ${cart5.preice}입니다3`);
+console.log(`장바구니에 ${cart5['present']}이 담겨있습니다. 구입가격은 ${cart5['preice']}입니다3`);//장바구니에 장미 한 묶음이 담겨있습니다. 구입가격은 23000입니다3
+
+//
+var cart6 = {
+  present : "장미 한 묶음",
+  price : 15000  
+}
+console.log(`장바구니에 ${cart6.present}이 담겨있습니다. 구입가격은 ${cart6.price}입니다4`);//장바구니에 장미 한 묶음이 담겨있습니다. 구입가격은 15000입니다4
+console.log(`장바구니에 ${cart6['present']}이 담겨있습니다. 구입가격은 ${cart6['price']}입니다4`); //장바구니에 장미 한 묶음이 담겨있습니다. 구입가격은 15000입니다4
+
+
+</script>
+</head>
+<body>
+  
+</body>
+</html>

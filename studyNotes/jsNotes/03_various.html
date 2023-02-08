@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>various</title>
+<script>
+ //var /  ES6(let  / const)
+//let  데이터 자체를 교체할 수 있음
+let num = 1;
+num = num * 5;
+num = 23;
+console.log(num); //23
+
+let str = "문자형 데이터";
+str = `I'm ${str}`;
+console.log(str);  //I'm 문자형 데이터
+
+let arr = ["color"];
+arr = ["red","orange","yellow"];
+console.log(arr); //(3) ['red', 'orange', 'yellow']
+
+//const
+/*
+var num;
+num = 123;
+*/
+const number1 = 20;
+const string1 = "자바스크립트";
+console.log(`number1 : ${number1}`); //number1 : 20
+console.log(`string1 : ${string1}`); //string1 : 자바스크립트
+
+//const 내용을 교체할 수 없는 존재
+const number2 = 20;
+// number2 = "자바스크립트"; //오류
+console.log(`number2 : ${number1}`);
+
+//조건식에서 변수 선언
+//if(조건식){실행문}
+var msg1 = "hello1"; //전역변수(Global variable)
+if(true){
+  var msg1 = "안녕하세요1"; //지역변수(Local variable)
+  console.log(msg1); //안녕하세요1
+}
+console.log(msg1); //안녕하세요1
+
+let msg2 = "hello2";
+if(true){
+  let msg2 = "안녕하세요2";
+  console.log(msg2);//안녕하세요2
+}
+console.log(msg2);//hello2
+
+const msg3 = "hello3";
+if(true){
+  const msg3 = "안녕하세요3";
+  console.log(msg3); //안녕하세요3
+}
+console.log(msg3); //hello3
+
+//함수구문에서 변수선언
+//function(){실행문}
+//var 
+var msg4 = "hello4";
+function preinOut1(){
+  var msg4 = "안녕하세요4";
+  console.log(msg4);
+}
+preinOut1(); //안녕하세요4
+console.log(msg4); //hello4
+
+//let
+let msg5 = "hello5";
+function preinOut2(){
+  let msg5 = "안녕하세요5";
+  console.log(msg5); 
+}
+preinOut2();  //안녕하세요5
+console.log(msg5);   //hello5
+
+//const
+const msg6 = "hello6";
+function preinOut3(){
+  const msg6 = "안녕하세요6";
+  console.log(msg6); 
+}
+preinOut3();  //안녕하세요6
+console.log(msg6);   //hello6
+
+//var
+if(true){
+  var age1 = 20;
+  console.log(`1. 당신의 나이는1 : ${age1}`); //1. 당신의 나이는1 : 20
+}
+console.log(`1. 당신의 나이는1 : ${age1}`); //1. 당신의 나이는1 : 20
+
+//let
+if(true){
+  let age2 = 21;
+  console.log(`1. 당신의 나이는2 : ${age2}`); //1. 당신의 나이는1 : 22
+}
+//console.log(`1. 당신의 나이는2 : ${age2}`); //오류
+
+if(true){
+  let age3 = 22;
+  console.log(`1. 당신의 나이는2 : ${age3}`); //1. 당신의 나이는2 : 22
+}
+let age4 = 22;
+console.log(`1. 당신의 나이는2 : ${age4}`); //1. 당신의 나이는2 : 22
+
+//var와 let의 혼합
+if(true){
+  var age5 = 20;
+  console.log(`1. 당신의 나이는2 : ${age5}`);  //1. 당신의 나이는2 : 20
+}
+//let age5 = 24;
+console.log(`1. 당신의 나이는2 : ${age5}`);  
+
+//
+if(true){
+  let age6 = 20;
+  console.log(`1. 당신의 나이는2 : ${age6}`);  //1. 당신의 나이는2 : 20
+}
+var age6 = 24;
+console.log(`1. 당신의 나이는2 : ${age6}`); //1. 당신의 나이는2 : 24
+
+// 데이터타입 Number, String, Boolean, null, undefined + ES6 Symbol
+// Symbol 고유성
+const test = "자바스크립트0";
+console.log(test); //자바스크립트0
+console.log(test == "자바스크립트0"); //true
+console.log(test === "자바스크립트0"); //true
+
+const me = Symbol('자바스크립트1');
+console.log(me);  //Symbol(자바스크립트1)
+console.log(me == Symbol('자바스크립트1') ); //false
+console.log(me === Symbol('자바스크립트1') ); //false
+
+const clone1 = Symbol('자바스크립트2');
+const clone2 = Symbol('자바스크립트2');
+console.log(clone1); //Symbol(자바스크립트2)
+console.log(clone2); //Symbol(자바스크립트2)
+console.log(clone1 == clone2); //false
+console.log(clone1 === clone2); //false
+
+//Symbol.for 일치하게 저장된 Symbol값은 true로 반환
+const clone3 = Symbol.for('javascript');
+const clone4 = Symbol.for('javascript');
+console.log(clone3 == clone4); //true
+console.log(clone3 === clone4); //true
+
+</script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>classList</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ #box{width:200px; height: 200px; border: 1px solid olivedrab; display: flex; justify-content: center; align-items: center; cursor: pointer;} 
+ .opening{background-color: orange;}
+
+ .fa-reddit{color:red; font-size:48px;}
+</style>
+<script>
+//classList.add() 클래스 추가
+let fnc1 = () =>{
+  var box = document.getElementById("box").classList.add("opening");
+  return fnc1;
+}
+//classList.remove() 클래스 제거
+let fnc2 = () =>{
+  var box = document.getElementById("box").classList.remove("opening");
+  return fnc2;
+}
+//classList.toggle() 클래스 추가/제거
+let fnc3 = () =>{
+  var box = document.getElementById("box").classList.toggle("opening");
+  return fnc3;
+}
+let fnc4 = () =>{
+  var icon = document.getElementById("icon").classList.toggle("fa-reddit-alien");
+  return fnc4;
+}
+</script>
+</head>
+<body>
+<div id="box">나는 박스공간</div>  
+<p>
+  <button type="button" onClick="fnc1()">add</button>
+  <button type="button" onClick="fnc2()">remove</button>
+  <button type="button" onClick="fnc3()">toggle</button>
+</p>
+<p><i class="fa">&#xf1a1;</i></p>
+<p><i id="icon" class="fa fa-reddit" onclick="fnc4()"></i></p>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>function</title>
+<script>
+ //화살표 함수(arrow function) , function을 제거, {} 대신  =>
+ //
+ function add1(a,b){
+  return a + b;
+ }
+ console.log(add1(7,8)); //15
+
+ //
+ const add2 = function(x,y){
+  return x + y;
+ }
+ console.log(add2(8,7));
+
+ //
+const add3 = (x,y) => x + y;  //{} 실행문 내부에 return 문만 선언되었을 때
+console.log(add1(10,15)); //25
+
+//
+const add3_ = (x,y) => console.log(y);
+add3_(4,5); //5
+
+//함수 실행문 내부에 return문 이외의 문구 작성시 {}는 존재해야함
+const add4 = (x , y) => {
+  const a = 13;
+  return a + x + y;
+}
+console.log(add4(4,5)); //22
+
+//매개변수가 하나인 경우
+const add5  = (g) => g + 9;
+console.log(add5(6)); //15
+
+//매개변수가 하나인 경우
+const add6  = g => g + 9;
+console.log(add6(6)); //15
+
+//매개변수가 존재하지 않은 경우
+const add7 = () => {console.log(`add7 함수구문 실행`)};
+add7(); //add7 함수구문 실행
+
+//
+//fnc1();  //ok
+function fnc1(){
+  console.log(`fnc1 호출에 의한 함수구문 실행`);
+}
+fnc1(); //fnc1 호출에 의한 함수구문 실행
+
+//fnc2(); //오류 
+const fnc2 = function(){
+  console.log(`fnc2 호출에 의한 함수구문 실행`);
+}
+fnc2(); //fnc2 호출에 의한 함수구문 실행
+
+//실습문제(화살표 함수)
+//세개의 숫자 합계를 화살표 함수를 이용하여 콘솔창에 출력하시오
+//함수호출문을 통해서 1,2,3을 함수구문에 전달하고 '최종 합계는 : 6' 이라는 값을 콘솔창에 출력
+//1
+const fnc3 = function(x,y,z){
+  return x + y + z;
+}
+console.log(`최종 합계는 : ${fnc3(1,2,3)}`); //최종 합계는 : 6
+
+//2
+const fnc4 = (x,y,z) => {
+  return x + y + z;
+}
+console.log(`최종 합계는 : ${fnc4(1,2,3)}`); //최종 합계는 : 6
+
+//3
+const fnc5 = (x,y,z) => x + y + z;
+console.log(`최종 합계는 : ${fnc5(1,2,3)}`); //최종 합계는 : 6
+
+//
+const test1 = {
+  a : function(){
+    console.log(this);
+  }
+}
+test1.a(); //{a: ƒ}
+
+const test2 = {
+  b : () => {
+    console.log(this); //Window ....
+  }
+}
+test2.b();
+
+//
+const test3 = {
+  name : 'javascript',
+  age : function(){
+    console.log(`Hi ${this.name}`);
+  }
+};
+test3.age(); //Hi javascript
+
+//
+const test4 = {
+  name : 'javascript',
+  age : () => {
+    console.log(`Hi ${this.name}`); 
+  }
+};
+test4.age(); //Hi 
+
+const test5 = {
+  name : 'javascript',
+  age : () => {
+    console.log(`Hi ${test5.name}`); 
+  }
+};
+test5.age(); //Hi javascript
+
+//arguments , 함수에 전달되는 인수들을 배열형태로 나타냄
+function ex1(){
+  console.log(ex1); //arguments
+  console.log(ex1[2]); //undefined
+  console.log(arguments[2]); //3
+}
+ex1(1,2,3);
+
+const ex2 = function(){
+  console.log(arguments); //Arguments(3) ['A', 'B', 'C', callee: ƒ, Symbol(Symbol.iterator): ƒ]
+  console.log(ex2[2]); //undefined
+  console.log(arguments[2]); //c
+}
+ex2("A","B","C");
+
+const ex3 = () => {
+  //console.log(arguments);  //오류
+}
+ex3("A","B","C");
+
+const ex4 = (...arr) => {
+  console.log(arr); //(3) ['A', 'B', 'C']
+  //console.log(arguments);  //오류
+  console.log(arr[2]); // C
+}
+ex4("A","B","C"); 
+</script>
+</head>
+<body>
+<h3 id="ch_txt1">이젠1</h3>  
+<h3 id="ch_txt2">이젠2</h3>  
+<script>
+  //화살표함수
+  //1. ch_txt1  이젠1 문구를 "이젠 아카데미" 로 변경(body 출력)
+  //2. ch_txt2  이젠2 문구를 "이젠 만세" 로 변경(콘솔창에 출력)
+  //1
+  const fnc_1 = i => {
+    //document.getElementById("ch_txt1").innerHTML = i;  //ok
+    //document.getElementById("ch_txt1").innerText = i; //ok
+    document.querySelector("#ch_txt1").innerText = i;
+  }
+  fnc_1("이젠 아카데미");
+
+  //2
+  const fnc_2 = j => {
+    document.querySelector("#ch_txt2").innerText = j;
+    return `${j} 만세`
+  }
+  console.log(fnc_2("이젠"));
+</script>
+</body>
+</html>

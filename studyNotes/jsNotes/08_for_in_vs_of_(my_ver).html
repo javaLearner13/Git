@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.3.min.js"></script>
+</head>
+
+<body>
+
+    <script>
+        const ex = ["A", "B", "C"];
+        let txt = "";
+
+        for (let i in ex) {
+            console.log(i); //0 1 2
+        }
+
+        for (let i of ex) {
+            console.log(i); //A B C
+        }
+
+        for (let i in ex) {
+            txt += i + " ";
+        }
+
+        document.write(txt); //0 1 2
+
+        document.write("<br>");
+
+        txt = "";
+
+        for (let i of ex) {
+            txt += i + " ";
+        }
+        document.write(txt + " "); //A B C
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+class
+
+//field + constructors + methods
+//important lecture-> go to ch06.sec09
+
+/////////////////////////////////////////
+
+static variables (ch06.sec11)
+(feat. final)
+
+//exists in memories
+//set value once
+//no inherit allowed
+//can't be an instance member
+//this is why final is often used with static
+
+////////////////////////////////////////
+
+
+private (ch06.sec11.exam02 -> Person & PersonMain)
+
+//uses get,set. needs to use method to alter values!
+//setting restrictions using if.. etc.. to filter user
+
+////////////////////////////////////////
