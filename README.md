@@ -1,1 +1,1 @@
-# Git
+my projects + study notes
