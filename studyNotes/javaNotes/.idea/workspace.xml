@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="333d3042-80b9-4700-9321-91c2a1fe1cf9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaLectures/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javaLectures/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaLectures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javaLectures/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javaQuiz/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/javaQuiz/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizFour/Quiz1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizFour/Quiz2_for.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizFour/Quiz3_for_count.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizFour/Quiz4_for_count_up.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizFour/Quiz5_for_Sum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizFour/Quiz6_sum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizFour/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizOne/Absolute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizOne/Negative.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizThree/Quiz10_howLongisNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizThree/Quiz1_if.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizThree/Quiz2_while.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizThree/Quiz3_rand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizThree/Quiz4_numbers_in_the_middle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizThree/Quiz5_countDown.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizThree/Quiz6_increment_test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizThree/Quiz7_asterisk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizThree/Quiz8_even_odd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizThree/Quiz9_even_odd_2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizTwo/Quiz10_switch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizTwo/Quiz1_Max_Val.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizTwo/Quiz2_Get_Diff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizTwo/Quiz3_comparison.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizTwo/Quiz4_find_minimum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizTwo/Quiz5_find_center.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizTwo/Quiz6_max_min.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizTwo/Quiz7_Math_min_max.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizTwo/Quiz8_ascending.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaQuiz/out/production/Quiz/quizTwo/Quiz9_random_switch.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2LRNa2D9UJTjOW4YvG3lSRBUhwD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/natge/Desktop/Git/Git/studyNotes/javaNotes&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="333d3042-80b9-4700-9321-91c2a1fe1cf9" name="Changes" comment="" />
+      <created>1675829997132</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675829997132</updated>
+      <workItem from="1675829997803" duration="165000" />
+      <workItem from="1675830181632" duration="494000" />
+      <workItem from="1675831102118" duration="102000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
+</project>

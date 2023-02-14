@@ -23,3 +23,48 @@ private (ch06.sec11.exam02 -> Person & PersonMain)
 //setting restrictions using if.. etc.. to filter user
 
 ////////////////////////////////////////
+
+Singleton (ch06.sec15)
+
+static Singleton.. ??
+multiple instances sharing the same memory .. ???
+
+////////////////////////////////////////
+
+extends (Inherit -> ch07.sec02 Phone/Smartphone/SmartphoneMain)
+
+Smartphone can use Phone's fields
+
+////////////////////////////////////////
+
+super (ch07.sec03)
+
+????
+
+////////////////////////////////////////
+
+override (ch07.sec04 ~ sec08)
+
+////////////////////////////////////////
+
+protected
+
+????
+
+////////////////////////////////////////
+
+Interface (ch08.sec02~03 + interfaceEx)
+((((((Interface vs extends)))))))
+extends: inherits class itself // class fked up -> children fked up
+interface: inherits interface..? // class fked up -> children working fine ?
+
+////////////////////////////////////////
+
+Generic(ch13.sec01 sec02 sec03 ....)
+
+////////////////////////////////////////
+
+List(ch15.sec02.exam01)
+
+////////////////////////////////////////
+
