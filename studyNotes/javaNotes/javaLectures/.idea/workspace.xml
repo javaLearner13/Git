@@ -5,95 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a976e08a-d61a-4cba-b017-bd8f060716ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch06/sec15/Singleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch06/sec15/SingletonMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch07/sec02/Phone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch07/sec02/Smartphone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch07/sec02/SmartphoneMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch07/sec03/Super.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch07/sec04/ex/OverridingEx.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch07/sec04/exam01/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch07/sec04/exam01/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch07/sec04/exam01/OverrideMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch07/sec08/exam01/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch07/sec08/exam01/CarMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch07/sec08/exam01/HankookTire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch07/sec08/exam01/KumhoTire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch07/sec08/exam01/Tire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch08/sec02/Audio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch08/sec02/RemoteControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch08/sec02/RemoteControlMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch08/sec02/Television.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch08/sec03/RemoteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch08/sec03/RemoteControllerMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch13/sec01/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch13/sec01/GenericExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch13/sec02/exam01/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch13/sec02/exam01/GenericExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch13/sec02/exam01/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch13/sec02/exam01/Tv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch13/sec02/exam02/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch13/sec02/exam02/CarAgency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch13/sec02/exam02/GenericExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch13/sec02/exam02/Home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch13/sec02/exam02/HomeAgency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch13/sec02/exam02/Rentable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch13/sec03/exam01/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch13/sec03/exam01/GenericExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch15/sec02/exam01/ArrayListExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch15/sec02/exam01/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/hw1/Homework01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/hw1/MyVersion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/hw1/MyVersionMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/hw1/MyVersionOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/hw1/MyVersionSwap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaceEx/Audio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaceEx/RemoteControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaceEx/RemoteControlMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaceEx/Television.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaQuiz/src/quizFour/Quiz7_calc_weight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch15/sec05/exam01/TreeSetExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch15/sec06/exam01/Coin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch15/sec06/exam01/StackExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch15/sec07/SynchronizeMapExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Note_for_myself.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Note_for_myself.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Lectures/homework1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaQuiz/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaQuiz/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizFour/Quiz1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizFour/Quiz2_for.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizFour/Quiz3_for_count.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizFour/Quiz4_for_count_up.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizFour/Quiz5_for_Sum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizFour/Quiz6_sum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizFour/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizOne/Absolute.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizOne/Negative.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizThree/Quiz10_howLongisNumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizThree/Quiz1_if.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizThree/Quiz2_while.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizThree/Quiz3_rand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizThree/Quiz4_numbers_in_the_middle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizThree/Quiz5_countDown.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizThree/Quiz6_increment_test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizThree/Quiz7_asterisk.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizThree/Quiz8_even_odd.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizThree/Quiz9_even_odd_2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizTwo/Quiz10_switch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizTwo/Quiz1_Max_Val.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizTwo/Quiz2_Get_Diff.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizTwo/Quiz3_comparison.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizTwo/Quiz4_find_minimum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizTwo/Quiz5_find_center.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizTwo/Quiz6_max_min.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizTwo/Quiz7_Math_min_max.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizTwo/Quiz8_ascending.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaQuiz/out/production/Quiz/quizTwo/Quiz9_random_switch.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +92,7 @@
       <workItem from="1675917210221" duration="13268000" />
       <workItem from="1676268690103" duration="5420000" />
       <workItem from="1676351941986" duration="9438000" />
+      <workItem from="1676442774963" duration="4282000" />
     </task>
     <servers />
   </component>
